@@ -1,0 +1,20 @@
+#' Acquire balance sheet.
+#' 
+#' Extracts and displays balance sheet from the annual report of a given company. 
+#' This functionality is only available for queries fo balance sheets that belong to domestic companies. 
+#' Note that all data returned by this function comes from the company's Form 10-K, not Form 10-K/A.
+#' 
+#' @export
+#' @param symbol A character vector specifying the stock symbol of the company of interest.
+#' @param year A numeric vector specifying the year during which the annual report was filed.
+#' @examples
+#' GetBalanceSheet("GOOG", 2014)
+
+
+GetBalanceSheet <- function(symbol, year) {
+     
+     balance.sheet.descriptions <- c("CONSOLIDATED BALANCE SHEET", "CONSOLIDATED BALANCE SHEETS")
+     
+     GetFinancial(balance.sheet.descriptions, symbol, year)
+}
+
