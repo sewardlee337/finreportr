@@ -11,7 +11,7 @@ Imports: XML,
     dplyr,
     rvest,
     XBRL
-License: What license is it under?
+License: MIT + file LICENSE
 RoxygenNote: 5.0.1
 Suggests: knitr,
     rmarkdown,
