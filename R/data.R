@@ -1,7 +1,8 @@
 #' Standard Industrial Classification Code List
 #' 
 #' A dataset containing SIC codes and industries that they represent
-#'  
+#'
+#' @export   
 #' @format A data frame with 444 rows and 2 variables:
 #' \itemize{
 #'   \item SIC: Standard Industrial Classification Code
@@ -15,6 +16,7 @@
 #' 
 #' A dataset containing state and country codes used in the SEC EDGAR database.
 #' 
+#' @export
 #' @format A data frame with 310 rows and 2 variables:
 #'  \itemize{
 #'   \item state: State or Country Code
