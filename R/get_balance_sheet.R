@@ -13,7 +13,7 @@
 
 GetBalanceSheet <- function(symbol, year) {
      
-     balance.sheet.descriptions <- c("CONSOLIDATED BALANCE SHEET", "CONSOLIDATED BALANCE SHEETS")
+     balance.sheet.descriptions <- c("CONSOLIDATED BALANCE SHEET", "CONSOLIDATED BALANCE SHEETS", "CONSOLIDATED STATEMENT OF FINANCIAL POSITION", "CONSOLIDATED STATEMENTS OF FINANCIAL POSITION")
      
      GetFinancial(balance.sheet.descriptions, symbol, year)
 }
