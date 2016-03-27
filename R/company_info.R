@@ -71,6 +71,8 @@ CompanyInfo <- function(symbol) {
           gsub("^.*Fiscal Year End: ", "", company.details) %>%
           substr(1,4)
      
+     if(fiscal.year.end == "SIC:"){fiscal.year.end <- NA}      ## Fix in case no fiscal year displayed
+     
      ##   Acquire state location
      state <-
           gsub("^.*State location: ", "", company.details) %>%
@@ -80,6 +82,8 @@ CompanyInfo <- function(symbol) {
      state.inc <-
           gsub("^.*State of Inc.: ", "", company.details) %>%
           substr(1,2)
+     
+     if(state.inc == "SI"){state.inc <- NA}       ## Fix in case no incorporation year displayed
      
      ##   Create dataframe
      info.df <- data.frame(company = company.name, CIK = CIK, SIC = SIC, state = state, state.inc = state.inc, FY.end = fiscal.year.end, street.address = street.address, city.state = city.state)
