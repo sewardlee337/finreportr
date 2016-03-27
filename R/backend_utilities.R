@@ -7,6 +7,11 @@
 
 GetAccessionNo <- function(symbol, year, foreign = FALSE) {
      
+     ##   This is here to please R CMD check
+     filing.year <- NULL
+     filing.name <- NULL
+     accession.no <- NULL
+     
      year.char <- as.character(year)
      
      reports.df <- AnnualReports(symbol, foreign)

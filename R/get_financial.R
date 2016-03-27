@@ -2,6 +2,17 @@
 
 GetFinancial <- function(statement.type, symbol, year) {
      
+     ##   This is here to please R CMD check
+     description <- NULL
+     roleId <- NULL
+     labelRole <- NULL
+     labelString <- NULL
+     unitId <- NULL
+     fact <- NULL
+     contextId <- NULL
+     startDate <- NULL
+     endDate <- NULL
+     
      ##   Function to acquire Instance Document URL
      GetURL <- function(symbol, year) {
           

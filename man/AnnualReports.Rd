@@ -15,9 +15,9 @@ AnnualReports(symbol, foreign = FALSE)
 Extracts and displays listing of annual reports filed by a company in a data frame.
 }
 \examples{
-CompanyInfo("TSLA")
-CompanyInfo("FB")
-CompanyInfo("HTHIY", foreign = TRUE)
-CompanyInfo("ASX", foreign = TRUE)
+AnnualReports("TSLA")
+AnnualReports("FB")
+AnnualReports("HTHIY", foreign = TRUE)
+AnnualReports("ASX", foreign = TRUE)
 }
 
