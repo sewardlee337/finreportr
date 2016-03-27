@@ -20,12 +20,22 @@ GetFinancial <- function(statement.type, symbol, year) {
           return(inst.url)
      }
      
+     
      ##   Function to download Instance Document
      GetInstFile <- function(url) {
           XBRL::xbrlDoAll(url)
      }
      
      inst.url <- GetURL(symbol, year)
+     
+     ##   Check if url exits
+     
+     check <- RCurl::url.exists(inst.url)
+     if(check == FALSE) {
+          stop("no XBRL-format filings detected")
+     }
+     
+     ##   Download Instance Document
      instFile <- GetInstFile(inst.url)
      
      ##   Get Role ID from Instance Document

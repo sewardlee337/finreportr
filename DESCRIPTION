@@ -9,6 +9,7 @@ Description: Download and display company financial data from the U.S. Securitie
     and Exchange Commission's EDGAR database.
 Imports: XML,
     dplyr,
+    RCurl,
     rvest,
     XBRL
 License: MIT + file LICENSE
