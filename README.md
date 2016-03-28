@@ -1,6 +1,6 @@
 [![Travis-CI Build Status](https://travis-ci.org/sewardlee337/finreportr.svg?branch=master)](https://travis-ci.org/sewardlee337/finreportr)
 
-# Financial Reports in R (finreportr)
+# finreportr - Financial Data from U.S. Securities and Exchange Commission
 
 A financial analyst's time is valuable – it shouldn't be wasted doing manual data entry. finreportr is a web scraper written in R that allows analysts to query data from the U.S. Securities and Exchange Commission directly from the R console.  It aims to eliminate time wasters from a financial analyst's workflow, such as navigating the SEC EDGAR database, flipping through financial reports, and parsing XBRL-encoded data.
 

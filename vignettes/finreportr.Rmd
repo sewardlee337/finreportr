@@ -9,7 +9,7 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-A financial analyst's time is valuable – it shouldn't be wasted doing manual data entry. **finreportr** is a web scraper written in R that allows analysts to query data from the U.S. Securities and Exchange Commission directly from the R console.  It aims to eliminate time wasters from a financial analyst's workflow, such as navigating the SEC EDGAR database, flipping through financial reports, and parsing XBRL-encoded data.
+A financial analyst's time is valuable – it shouldn't be wasted on performing manual data entry. **finreportr** is a web scraper written in R that allows analysts to query data from the U.S. Securities and Exchange Commission directly from the R console.  It aims to eliminate time wasters from a financial analyst's workflow, such as navigating the SEC EDGAR database, flipping through financial reports, and parsing XBRL-encoded data.
 
 **finreportr** allows you to fetch data from the SEC and load it into your workspace using the following commands:
 
@@ -21,9 +21,9 @@ A financial analyst's time is valuable – it shouldn't be wasted doing manual d
 
 ## Querying Company Information
 
-**finreportr** provides two functions that allows users to acquire background information relating to publicly-listed companies.
+**finreportr** provides two functions that allow users to acquire background information relating to publicly-listed companies.
 
-The function `CompanyInfo()` returns the following information about a given company based on its stock ticker symbol:
+The function `CompanyInfo()` returns the following information about a company based on its stock ticker symbol:
 
 * Name
 * [Central Index Key ("CIK")](https://en.wikipedia.org/wiki/Central_Index_Key)
@@ -42,7 +42,7 @@ For example, suppose we want to do a quick search on Google/Alphabet (symbol: `G
 1 GOOGLE INC. 0001288776 7370    CA        DE   1231 1600 AMPHITHEATRE PARKWAY MOUNTAIN VIEW CA 94043
 ```
 
-The function `AnnualReports()` returns a data frame that summarizes a given company's annual reports based on its stock ticker symbol. It will return data relating to a company's [Form 10-Ks](http://www.investopedia.com/terms/1/10-k.asp) if the company is domestic, and [Form 20-Fs](http://www.investopedia.com/terms/s/sec-form-20-f.asp) if the company is foreign. 
+The function `AnnualReports()` returns a data frame that summarizes a company's annual reports based on its stock ticker symbol. It will return data relating to a company's [Form 10-Ks](http://www.investopedia.com/terms/1/10-k.asp) if the company is domestic, and [Form 20-Fs](http://www.investopedia.com/terms/s/sec-form-20-f.asp) if the company is foreign. 
 
 For example, suppose we want to display the annual reports filed by Facebook (symbol: `FB`):
 
@@ -60,7 +60,7 @@ For example, suppose we want to display the annual reports filed by Facebook (sy
 
 ## Querying Financial Data
 
-The main benefit of **finreportr** comes from allowing users to search and display financial data without having to manually inspect filings from the SEC EDGAR database. This opens up opportunities for users to introduce automation, scalability, and reproducibility to their analysis.
+The main benefit of **finreportr** comes from allowing users to download and display financial data without having to manually inspect filings from the SEC EDGAR database. This creates opportunities for users to introduce automation, scalability, and reproducibility to their analysis.
 
 The function `GetIncome()` returns a company's income statement from a given filing year. Suppose we want the income statement of Tesla Motors (symbol: `TSLA`) from the annual report filed in 2015:
 
