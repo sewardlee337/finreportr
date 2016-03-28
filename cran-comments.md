@@ -14,9 +14,11 @@ Maintainer: 'Seward Lee <sewardlee337@gmail.com>'
 New submission
 ```
 
-I understand that this NOTE is a non-issue, as it is meant to "remind CRAN maintainers to check that the submission comes actually from his maintainer and not anybody else."
+* This is the first submission for this package
 
-See: [R-devel mailing list](https://mailman.stat.ethz.ch/pipermail/r-devel/2014-March/068497.html)
+* I understand that this NOTE is a non-issue, as it is meant to "remind CRAN maintainers to check that the submission comes actually from his maintainer and not anybody else."
+
+* See: [R-devel mailing list](https://mailman.stat.ethz.ch/pipermail/r-devel/2014-March/068497.html)
 
 ## Downstream dependencies
 There are currently no downstream dependencies.
