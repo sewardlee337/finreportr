@@ -103,10 +103,3 @@ The function `GetCashFlow()` returns a company's cash flow statement from a give
 5 Depreciation, Depletion and Amortization, Nonproduction   usd  79849000 2012-01-01 2012-12-31
 6 Depreciation, Depletion and Amortization, Nonproduction   usd 134516000 2013-01-01 2013-12-31
 ```
-
-## Lookup Tables
-
-**finreportr** contains two datasets that serve as lookup tables for encoded data displayed by the function `CompanyInfo`.
-
-* The dataset `siccodes` provides a listing of SIC codes and the industries that they represent.
-* The dataset `statecodes` provides a listing of state and country codes used by the SEC EDGAR database, and the states or countries that they represent.
