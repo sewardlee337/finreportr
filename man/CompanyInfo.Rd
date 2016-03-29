@@ -15,6 +15,5 @@ Extracts and displays basic information relating to a given company in a data fr
 \examples{
 CompanyInfo("GOOG")
 CompanyInfo("TSLA")
-CompanyInfo("FB")
 }
 

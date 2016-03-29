@@ -22,3 +22,8 @@ New submission
 
 ## Downstream dependencies
 There are currently no downstream dependencies.
+
+## Resubmission
+This is a resubmission. In this version I have:
+
+* Per CRAN Repository Policy, reduced the runtime of "checking examples" to only a few seconds.

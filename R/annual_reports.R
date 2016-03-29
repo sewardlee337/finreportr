@@ -8,9 +8,7 @@
 #' @param foreign A logical vector indicating whether the company is domestic or foreign. \code{foreign = FALSE} by default.
 #' @examples
 #' AnnualReports("TSLA")
-#' AnnualReports("FB")
 #' AnnualReports("HTHIY", foreign = TRUE)
-#' AnnualReports("ASX", foreign = TRUE)
 
 AnnualReports <- function(symbol, foreign = FALSE) {
      

@@ -2,6 +2,11 @@
 
 # finreportr - Financial Data from U.S. Securities and Exchange Commission
 
+* Author/Maintainer: [Seward Lee](https://github.com/sewardlee337)
+* License: [MIT](https://opensource.org/licenses/MIT)
+
+## Introduction
+
 A financial analyst's time is valuable – it shouldn't be wasted doing manual data entry. finreportr is a web scraper written in R that allows analysts to query data from the U.S. Securities and Exchange Commission directly from the R console.  It aims to eliminate time wasters from a financial analyst's workflow, such as navigating the SEC EDGAR database, flipping through financial reports, and parsing XBRL-encoded data.
 
 finreportr allows you to fetch data from the SEC and load it into your workspace using the following commands:

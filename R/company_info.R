@@ -8,7 +8,6 @@
 #' @examples
 #' CompanyInfo("GOOG")
 #' CompanyInfo("TSLA")
-#' CompanyInfo("FB")
 
 CompanyInfo <- function(symbol) {
      
