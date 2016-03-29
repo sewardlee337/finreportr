@@ -1,4 +1,4 @@
-[![Travis-CI Build Status](https://travis-ci.org/sewardlee337/finreportr.svg?branch=master)](https://travis-ci.org/sewardlee337/finreportr)
+[![Travis-CI Build Status](https://travis-ci.org/sewardlee337/finreportr.svg?branch=master)](https://travis-ci.org/sewardlee337/finreportr) [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/finreportr)](http://cran.r-project.org/package=finreportr)
 
 # finreportr - Financial Data from U.S. Securities and Exchange Commission
 
