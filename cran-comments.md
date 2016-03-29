@@ -27,3 +27,5 @@ There are currently no downstream dependencies.
 This is a resubmission. In this version I have:
 
 * Per CRAN Repository Policy, reduced the runtime of "checking examples" to only a few seconds.
+
+* Included URL to EDGAR homepage in DESCRIPTION.

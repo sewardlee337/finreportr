@@ -2,11 +2,14 @@ Package: finreportr
 Type: Package
 Title: Financial Data from U.S. Securities and Exchange Commission
 Version: 1.0.0
-Date: 2016-03-28
+Date: 2016-03-29
 Author: Seward Lee
 Maintainer: Seward Lee <sewardlee337@gmail.com>
 Description: Download and display company financial data from the U.S. Securities
-    and Exchange Commission's EDGAR database.
+    and Exchange Commission's EDGAR database. It contains a suite of functions with
+    web scraping and XBRL parsing capabilities that allows users to extract data from EDGAR 
+    in an automated and scalable manner. See <https://www.sec.gov/edgar/searchedgar/companysearch.html>
+    for more information.
 Depends: R (>= 2.10)
 Imports: xml2,
     dplyr,
@@ -14,6 +17,7 @@ Imports: xml2,
     rvest,
     XBRL
 License: MIT + file LICENSE
+URL: https://github.com/sewardlee337/finreportr
 RoxygenNote: 5.0.1
 Suggests: knitr,
     rmarkdown,
