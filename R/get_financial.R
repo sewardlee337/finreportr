@@ -27,14 +27,14 @@ GetFinancial <- function(statement.type, symbol, year) {
           report.period <- ReportPeriod(symbol, CIK, accession.no, accession.no.raw)
           report.period <- gsub("-", "" , report.period)
           
-          inst.url <- paste0("http://www.sec.gov/Archives/edgar/data/", CIK, "/", accession.no, "/", lower.symbol, "-", report.period, ".xml")
+          inst.url <- paste0("https://www.sec.gov/Archives/edgar/data/", CIK, "/", accession.no, "/", lower.symbol, "-", report.period, ".xml")
           return(inst.url)
      }
      
      
      ##   Function to download Instance Document
      GetInstFile <- function(url) {
-          XBRL::xbrlDoAll(url)
+          XBRL::xbrlDoAll(url, cache.dir="XBRLcache", prefix.out ="out", verbose=FALSE)
      }
      
      inst.url <- GetURL(symbol, year)
@@ -48,6 +48,11 @@ GetFinancial <- function(statement.type, symbol, year) {
      
      ##   Download Instance Document
      instFile <- GetInstFile(inst.url)
+     
+     ##   Clear Cache Dir
+     file.remove("out_calculations.csv", "out_contexts.csv", "out_definitions.csv", "out_elements.csv", "out_facts.csv", "out_footnotes.csv", "out_labels.csv", "out_presentations.csv", "out_roles.csv", "out_units.csv")
+     
+     unlink("XBRLcache", recursive = TRUE)
      
      ##   Get Role ID from Instance Document
      role.df <- instFile$role %>%

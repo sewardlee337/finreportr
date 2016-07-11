@@ -16,6 +16,18 @@ finreportr allows you to fetch data from the SEC and load it into your workspace
 * `GetBalanceSheet()`: returns the balance sheet for a given company
 * `GetCashFlow()`: returns the cash flow statement for a given company
 
+To install CRAN release version of finreportr:
+
+```
+install.packages("finreportr")
+```
+
+To install bleeding-edge version from GitHub:
+
+```
+devtools::install_github("sewardlee337/finreportr")
+```
+
 ## CompanyInfo()
 
 `CompanyInfo()` returns the following information about a given company based on its stock ticker symbol:
