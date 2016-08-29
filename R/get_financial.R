@@ -41,7 +41,7 @@ GetFinancial <- function(statement.type, symbol, year) {
      
      ##   Check if url exits
      
-     check <- RCurl::url.exists(inst.url)
+     check <- tryCatch(is.list(httr::GET(inst.url)), error = function(e) {return(FALSE)})
      if(check == FALSE) {
           stop("no XBRL-format filings detected")
      }

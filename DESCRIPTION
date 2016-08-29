@@ -1,7 +1,7 @@
 Package: finreportr
 Type: Package
 Title: Financial Data from U.S. Securities and Exchange Commission
-Version: 1.0.0
+Version: 1.0.1
 Date: 2016-03-29
 Author: Seward Lee
 Maintainer: Seward Lee <sewardlee337@gmail.com>
@@ -13,7 +13,7 @@ Description: Download and display company financial data from the U.S. Securitie
 Depends: R (>= 2.10)
 Imports: xml2,
     dplyr,
-    RCurl,
+    httr,
     rvest,
     XBRL
 License: MIT + file LICENSE
