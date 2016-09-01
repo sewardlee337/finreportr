@@ -15,7 +15,8 @@ Imports: xml2,
     dplyr,
     httr,
     rvest,
-    XBRL
+    XBRL,
+    curl
 License: MIT + file LICENSE
 URL: https://github.com/sewardlee337/finreportr
 RoxygenNote: 5.0.1
