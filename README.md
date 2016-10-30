@@ -1,4 +1,4 @@
-[![Travis-CI Build Status](https://travis-ci.org/sewardlee337/finreportr.svg?branch=master)](https://travis-ci.org/sewardlee337/finreportr) [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/finreportr)](http://cran.r-project.org/package=finreportr) 
+[![Travis-CI Build Status](https://travis-ci.org/sewardlee337/finreportr.svg?branch=master)](https://travis-ci.org/sewardlee337/finreportr) [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/finreportr)](https://cran.r-project.org/package=finreportr) 
 
 # finreportr - Financial Data from U.S. Securities and Exchange Commission
 
@@ -69,7 +69,7 @@ where
 `AnnualReports()` returns a dataframe that summarizes a given company's annual reports based on its stock ticker symbol. Information returned include:
 * Filing Name
 * Filing Date
-* [Accession Number] (http://www.sec.gov/investor/pubs/edgarguide.htm#P158_19972)
+* [Accession Number] (https://www.sec.gov/investor/pubs/edgarguide.htm#P158_19972)
 
 `AnnualReports()` will return data relating to a company's [Form 10-Ks](http://www.investopedia.com/terms/1/10-k.asp) if the company is domestic, and [Form 20-Fs](http://www.investopedia.com/terms/s/sec-form-20-f.asp) if the company is foreign. 
 

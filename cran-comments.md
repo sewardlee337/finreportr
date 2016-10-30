@@ -1,3 +1,40 @@
+# VERSION 1.0.1
+
+## Test environments
+* local Windows install, R 3.2.3
+* ubuntu 12.04 (on travis-ci), R 3.3.1
+* win-builder (devel and release)
+
+## R CMD check results
+There were no ERRORs or WARNINGs.
+
+There was 1 NOTE (flagged by win-builder):
+
+```
+* checking CRAN incoming feasibility ... NOTE
+Maintainer: 'Seward Lee <sewardlee337@gmail.com>'
+
+License components with restrictions and base license permitting such:
+  MIT + file LICENSE
+File 'LICENSE':
+  YEAR: 2016
+  COPYRIGHT HOLDER: Seward Lee
+
+Possibly mis-spelled words in DESCRIPTION:
+  XBRL (10:22)
+  scalable (11:25)
+```
+
+* I understand that neither "XBRL" (short for "eXtensible Business Reporting Language") nor "scalable" are spelling errors.
+
+## Downstream dependencies
+There are currently no downstream dependencies.
+
+---
+
+
+# VERSION 1.0.0
+
 ## Test environments
 * local Windows install, R 3.2.3
 * ubuntu 12.04 (on travis-ci), R 3.2.4
