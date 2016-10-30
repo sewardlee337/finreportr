@@ -8,8 +8,8 @@
 #' @param symbol A character vector specifying the stock symbol of the company of interest.
 #' @param year A numeric vector specifying the year during which the annual report was filed.
 #' @examples 
-#' \donttest{
-#' GetCashFlow("GOOG", 2014)
+#' \dontrun{
+#' GetCashFlow("FB", 2016)
 #' }
 
 

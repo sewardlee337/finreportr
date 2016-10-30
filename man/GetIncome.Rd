@@ -17,8 +17,8 @@ This functionality is only available for queries of income statements that belon
 Note that all data returned by this function comes from the company's 10-K, not 10-K/A.
 }
 \examples{
-\donttest{
-GetIncome("GOOG", 2014)
+\dontrun{
+GetIncome("FB", 2016)
 }
 }
 

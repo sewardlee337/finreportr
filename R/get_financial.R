@@ -1,4 +1,4 @@
-#' @import dplyr
+#' @import dplyr curl
 
 GetFinancial <- function(statement.type, symbol, year) {
      

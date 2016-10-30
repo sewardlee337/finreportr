@@ -17,8 +17,8 @@ This functionality is only available for queries of cash flow statements that be
 Note that all data returned by this function comes from the company's Form 10-K, not Form 10-K/A.
 }
 \examples{
-\donttest{
-GetCashFlow("GOOG", 2014)
+\dontrun{
+GetCashFlow("FB", 2016)
 }
 }
 

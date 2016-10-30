@@ -8,8 +8,8 @@
 #' @param symbol A character vector specifying the stock symbol of the company of interest.
 #' @param year A numeric vector specifying the year during which the annual report was filed.
 #' @examples 
-#' \donttest{
-#' GetBalanceSheet("GOOG", 2014)
+#' \dontrun{
+#' GetBalanceSheet("FB", 2016)
 #' }
 
 GetBalanceSheet <- function(symbol, year) {

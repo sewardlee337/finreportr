@@ -17,8 +17,8 @@ This functionality is only available for queries fo balance sheets that belong t
 Note that all data returned by this function comes from the company's Form 10-K, not Form 10-K/A.
 }
 \examples{
-\donttest{
-GetBalanceSheet("GOOG", 2014)
+\dontrun{
+GetBalanceSheet("FB", 2016)
 }
 }
 
