@@ -12,7 +12,7 @@ bibliography: paper.bib
 
 # Summary
 
-'finreportr' is a R package that automates the downloading and processing of XBRL documents containing financial data from the U.S. Securities and Exchange Commission's EDGAR database. Using a suite of simple functions, data from the Statement of Operations, Balance Sheet, and Statement of Cash Flow of Form 10-Ks may be downloaded, processed, and returned to the user in R dataframes.
+'finreportr' is a R package that contributes to empirical finance research by automating the download of data relating to the health and transactions of publicly-listed companies, thus simplifying the workflow of financial analysts. It downloads and processes XBRL documents containing financial data from the U.S. Securities and Exchange Commission's EDGAR database. Using a suite of simple functions, data from the Statement of Operations, Balance Sheet, and Statement of Cash Flow of Form 10-Ks may be downloaded, processed, and returned to the user in R dataframes.
 
 The design of functions included in 'finreportr' is inspired by the quantitative finance package 'quantmod' (Ryan, Ulrich, and Thielsen 2016). XBRL-processing capabilities of 'finreportr' is mainly powered by the package 'XBRL' (Bertolusso and Kimmel 2016) under the hood.
 
