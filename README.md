@@ -137,31 +137,31 @@ where
 #### Example:
 
 ```
-###   Fetch first 20 lines of Google's income statement in the Form 10-K published in 2015.
+###   Fetch first 20 lines of Google's income statement in the Form 10-K published in 2016.
 
-> head(GetIncome("GOOG", 2015), 20)
+> head(GetIncome("GOOG", 2016), 20)
 
                                Metric Units      Amount  startDate    endDate
-1                            Revenues   usd 46039000000 2012-01-01 2012-12-31
-2                            Revenues   usd 55519000000 2013-01-01 2013-12-31
-3                            Revenues   usd 66001000000 2014-01-01 2014-12-31
-4                     Cost of Revenue   usd 17176000000 2012-01-01 2012-12-31
-5                     Cost of Revenue   usd 21993000000 2013-01-01 2013-12-31
-6                     Cost of Revenue   usd 25691000000 2014-01-01 2014-12-31
-7    Research and Development Expense   usd  6083000000 2012-01-01 2012-12-31
-8    Research and Development Expense   usd  7137000000 2013-01-01 2013-12-31
-9    Research and Development Expense   usd  9832000000 2014-01-01 2014-12-31
-10      Selling and Marketing Expense   usd  5465000000 2012-01-01 2012-12-31
-11      Selling and Marketing Expense   usd  6554000000 2013-01-01 2013-12-31
-12      Selling and Marketing Expense   usd  8131000000 2014-01-01 2014-12-31
-13 General and Administrative Expense   usd  3481000000 2012-01-01 2012-12-31
-14 General and Administrative Expense   usd  4432000000 2013-01-01 2013-12-31
-15 General and Administrative Expense   usd  5851000000 2014-01-01 2014-12-31
-16                 Costs and Expenses   usd 32205000000 2012-01-01 2012-12-31
-17                 Costs and Expenses   usd 40116000000 2013-01-01 2013-12-31
-18                 Costs and Expenses   usd 49505000000 2014-01-01 2014-12-31
-19            Operating Income (Loss)   usd 13834000000 2012-01-01 2012-12-31
-20            Operating Income (Loss)   usd 15403000000 2013-01-01 2013-12-31
+1                            Revenues   usd 55519000000 2013-01-01 2013-12-31
+2                            Revenues   usd 66001000000 2014-01-01 2014-12-31
+3                            Revenues   usd 74989000000 2015-01-01 2015-12-31
+4                     Cost of Revenue   usd 21993000000 2013-01-01 2013-12-31
+5                     Cost of Revenue   usd 25691000000 2014-01-01 2014-12-31
+6                     Cost of Revenue   usd 28164000000 2015-01-01 2015-12-31
+7    Research and Development Expense   usd  7137000000 2013-01-01 2013-12-31
+8    Research and Development Expense   usd  9832000000 2014-01-01 2014-12-31
+9    Research and Development Expense   usd 12282000000 2015-01-01 2015-12-31
+10      Selling and Marketing Expense   usd  6554000000 2013-01-01 2013-12-31
+11      Selling and Marketing Expense   usd  8131000000 2014-01-01 2014-12-31
+12      Selling and Marketing Expense   usd  9047000000 2015-01-01 2015-12-31
+13 General and Administrative Expense   usd  4432000000 2013-01-01 2013-12-31
+14 General and Administrative Expense   usd  5851000000 2014-01-01 2014-12-31
+15 General and Administrative Expense   usd  6136000000 2015-01-01 2015-12-31
+16                 Costs and Expenses   usd 40116000000 2013-01-01 2013-12-31
+17                 Costs and Expenses   usd 49505000000 2014-01-01 2014-12-31
+18                 Costs and Expenses   usd 55629000000 2015-01-01 2015-12-31
+19            Operating Income (Loss)   usd 15403000000 2013-01-01 2013-12-31
+20            Operating Income (Loss)   usd 16496000000 2014-01-01 2014-12-31
 ```
 
 ## GetBalanceSheet()
@@ -180,31 +180,31 @@ where
 #### Example:
 
 ```
-###   Fetch first 20 lines of Google's balance sheet in the Form 10-K published in 2015.
+###   Fetch first 20 lines of Google's balance sheet in the Form 10-K published in 2016.
 
-> head(GetBalanceSheet("GOOG", 2015), 20)
+> head(GetBalanceSheet("GOOG", 2016), 20)
 
-                                                     Metric Units      Amount startDate    endDate
-1              Cash and Cash Equivalents, at Carrying Value   usd  9983000000      <NA> 2011-12-31
-2              Cash and Cash Equivalents, at Carrying Value   usd 14778000000      <NA> 2012-12-31
-3              Cash and Cash Equivalents, at Carrying Value   usd 18898000000      <NA> 2013-12-31
-4              Cash and Cash Equivalents, at Carrying Value   usd 18347000000      <NA> 2014-12-31
-5                    Available-for-sale Securities, Current   usd 39819000000      <NA> 2013-12-31
-6                    Available-for-sale Securities, Current   usd 46048000000      <NA> 2014-12-31
-7        Cash, Cash Equivalents, and Short-term Investments   usd 58717000000      <NA> 2013-12-31
-8        Cash, Cash Equivalents, and Short-term Investments   usd 64395000000      <NA> 2014-12-31
-9                         Accounts Receivable, Net, Current   usd  8882000000      <NA> 2013-12-31
-10                        Accounts Receivable, Net, Current   usd  9383000000      <NA> 2014-12-31
-11           Receivable Under Reverse Repurchase Agreements   usd   100000000      <NA> 2013-12-31
-12           Receivable Under Reverse Repurchase Agreements   usd   875000000      <NA> 2014-12-31
-13 Deferred Tax Assets, Net of Valuation Allowance, Current   usd  1526000000      <NA> 2013-12-31
-14 Deferred Tax Assets, Net of Valuation Allowance, Current   usd  1322000000      <NA> 2014-12-31
-15                         Income Taxes Receivable, Current   usd   408000000      <NA> 2013-12-31
-16                         Income Taxes Receivable, Current   usd  1298000000      <NA> 2014-12-31
-17  Prepaid Revenue Share Expenses And Other Assets Current   usd  3253000000      <NA> 2013-12-31
-18  Prepaid Revenue Share Expenses And Other Assets Current   usd  3412000000      <NA> 2014-12-31
-19                                          Assets, Current   usd 72886000000      <NA> 2013-12-31
-20                                          Assets, Current   usd 80685000000      <NA> 2014-12-31
+                                                       Metric Units      Amount startDate    endDate
+1                Cash and Cash Equivalents, at Carrying Value   usd 14778000000      <NA> 2012-12-31
+2                Cash and Cash Equivalents, at Carrying Value   usd 18898000000      <NA> 2013-12-31
+3                Cash and Cash Equivalents, at Carrying Value   usd 18347000000      <NA> 2014-12-31
+4                Cash and Cash Equivalents, at Carrying Value   usd 16549000000      <NA> 2015-12-31
+5                      Available-for-sale Securities, Current   usd 46048000000      <NA> 2014-12-31
+6                      Available-for-sale Securities, Current   usd 56517000000      <NA> 2015-12-31
+7          Cash, Cash Equivalents, and Short-term Investments   usd 64395000000      <NA> 2014-12-31
+8          Cash, Cash Equivalents, and Short-term Investments   usd 73066000000      <NA> 2015-12-31
+9                           Accounts Receivable, Net, Current   usd  9383000000      <NA> 2014-12-31
+10                          Accounts Receivable, Net, Current   usd 11556000000      <NA> 2015-12-31
+11             Receivable Under Reverse Repurchase Agreements   usd   875000000      <NA> 2014-12-31
+12             Receivable Under Reverse Repurchase Agreements   usd   450000000      <NA> 2015-12-31
+13                           Income Taxes Receivable, Current   usd   591000000      <NA> 2014-12-31
+14                           Income Taxes Receivable, Current   usd  1903000000      <NA> 2015-12-31
+15    Prepaid Revenue Share Expenses And Other Assets Current   usd  3412000000      <NA> 2014-12-31
+16    Prepaid Revenue Share Expenses And Other Assets Current   usd  3139000000      <NA> 2015-12-31
+17                                            Assets, Current   usd 78656000000      <NA> 2014-12-31
+18                                            Assets, Current   usd 90114000000      <NA> 2015-12-31
+19 Prepaid Revenue Share Expenses And Other Assets Noncurrent   usd  3187000000      <NA> 2014-12-31
+20 Prepaid Revenue Share Expenses And Other Assets Noncurrent   usd  3181000000      <NA> 2015-12-31
 ```
 
 ## GetCashFlow()
@@ -223,29 +223,29 @@ where
 #### Example:
 
 ```
-###   Fetch first 20 lines of Google's cash flow statement in the Form 10-K published in 2015.
+###   Fetch first 20 lines of Google's cash flow statement in the Form 10-K published in 2016.
 
-> head(GetCashFlow("GOOG", 2015), 20)
+> head(GetCashFlow("GOOG", 2016), 20)
 
                                                                    Metric Units      Amount  startDate    endDate
-1                                Net Income (Loss) Attributable to Parent   usd 10737000000 2012-01-01 2012-12-31
-2                                Net Income (Loss) Attributable to Parent   usd 12920000000 2013-01-01 2013-12-31
-3                                Net Income (Loss) Attributable to Parent   usd 14444000000 2014-01-01 2014-12-31
-4  Depreciation and Loss on Disposition of Property, Plant, and Equipment   usd  1988000000 2012-01-01 2012-12-31
-5  Depreciation and Loss on Disposition of Property, Plant, and Equipment   usd  2781000000 2013-01-01 2013-12-31
-6  Depreciation and Loss on Disposition of Property, Plant, and Equipment   usd  3523000000 2014-01-01 2014-12-31
-7              Amortization and Impairment of Intangible and Other Assets   usd   974000000 2012-01-01 2012-12-31
-8              Amortization and Impairment of Intangible and Other Assets   usd  1158000000 2013-01-01 2013-12-31
-9              Amortization and Impairment of Intangible and Other Assets   usd  1456000000 2014-01-01 2014-12-31
-10                                               Share-based Compensation   usd  2692000000 2012-01-01 2012-12-31
-11                                               Share-based Compensation   usd  3343000000 2013-01-01 2013-12-31
-12                                               Share-based Compensation   usd  4279000000 2014-01-01 2014-12-31
-13 Excess Tax Benefit from Share-based Compensation, Operating Activities   usd   188000000 2012-01-01 2012-12-31
-14 Excess Tax Benefit from Share-based Compensation, Operating Activities   usd   481000000 2013-01-01 2013-12-31
-15 Excess Tax Benefit from Share-based Compensation, Operating Activities   usd   648000000 2014-01-01 2014-12-31
-16                                  Deferred Income Tax Expense (Benefit)   usd  -266000000 2012-01-01 2012-12-31
-17                                  Deferred Income Tax Expense (Benefit)   usd  -437000000 2013-01-01 2013-12-31
-18                                  Deferred Income Tax Expense (Benefit)   usd  -104000000 2014-01-01 2014-12-31
-19     Gain (Loss) on Sale of Business, Including Discontinued Operations   usd   188000000 2012-01-01 2012-12-31
-20     Gain (Loss) on Sale of Business, Including Discontinued Operations   usd   700000000 2013-01-01 2013-12-31
+1                                Net Income (Loss) Attributable to Parent   usd 12733000000 2013-01-01 2013-12-31
+2                                Net Income (Loss) Attributable to Parent   usd 14136000000 2014-01-01 2014-12-31
+3                                Net Income (Loss) Attributable to Parent   usd 16348000000 2015-01-01 2015-12-31
+4    Depreciation and Impairment on Disposition of Property and Equipment   usd  2781000000 2013-01-01 2013-12-31
+5    Depreciation and Impairment on Disposition of Property and Equipment   usd  3523000000 2014-01-01 2014-12-31
+6    Depreciation and Impairment on Disposition of Property and Equipment   usd  4132000000 2015-01-01 2015-12-31
+7              Amortization and Impairment of Intangible and Other Assets   usd  1158000000 2013-01-01 2013-12-31
+8              Amortization and Impairment of Intangible and Other Assets   usd  1456000000 2014-01-01 2014-12-31
+9              Amortization and Impairment of Intangible and Other Assets   usd   931000000 2015-01-01 2015-12-31
+10                                               Share-based Compensation   usd  3343000000 2013-01-01 2013-12-31
+11                                               Share-based Compensation   usd  4279000000 2014-01-01 2014-12-31
+12                                               Share-based Compensation   usd  5203000000 2015-01-01 2015-12-31
+13 Excess Tax Benefit from Share-based Compensation, Operating Activities   usd   481000000 2013-01-01 2013-12-31
+14 Excess Tax Benefit from Share-based Compensation, Operating Activities   usd   648000000 2014-01-01 2014-12-31
+15 Excess Tax Benefit from Share-based Compensation, Operating Activities   usd   548000000 2015-01-01 2015-12-31
+16                                  Deferred Income Taxes and Tax Credits   usd  -437000000 2013-01-01 2013-12-31
+17                                  Deferred Income Taxes and Tax Credits   usd  -104000000 2014-01-01 2014-12-31
+18                                  Deferred Income Taxes and Tax Credits   usd  -179000000 2015-01-01 2015-12-31
+19     Gain (Loss) on Sale of Business, Including Discontinued Operations   usd   700000000 2013-01-01 2013-12-31
+20     Gain (Loss) on Sale of Business, Including Discontinued Operations   usd   740000000 2014-01-01 2014-12-31
 ```
