@@ -249,3 +249,7 @@ where
 19     Gain (Loss) on Sale of Business, Including Discontinued Operations   usd   700000000 2013-01-01 2013-12-31
 20     Gain (Loss) on Sale of Business, Including Discontinued Operations   usd   740000000 2014-01-01 2014-12-31
 ```
+
+## Bug Reports and Feedback
+
+Please use the GitHub issue tracker for bug reports, feature request, or general discussions.
