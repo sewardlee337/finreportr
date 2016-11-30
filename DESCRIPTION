@@ -19,6 +19,7 @@ Imports: xml2,
     curl
 License: MIT + file LICENSE
 URL: https://github.com/sewardlee337/finreportr
+BugReports: https://github.com/sewardlee337/finreportr/issues
 RoxygenNote: 5.0.1
 Suggests: knitr,
     rmarkdown,
