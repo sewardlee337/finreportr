@@ -39,7 +39,8 @@ GetAccessionNo <- function(symbol, year, foreign = FALSE) {
 
 ReportPeriod <- function(symbol, CIK, accession.no, accession.no.raw) {
      
-     url <- paste0("https://www.sec.gov/Archives/edgar/data/", CIK, "/", accession.no, "/", accession.no.raw, "-index.htm")
+     url <- paste0("https://www.sec.gov/Archives/edgar/data/", CIK, "/", 
+                   accession.no, "/", accession.no.raw, "-index.htm")
      search.result <- xml2::read_html(url)
      
      ##   Generic function to extract info

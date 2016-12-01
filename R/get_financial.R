@@ -27,7 +27,8 @@ GetFinancial <- function(statement.type, symbol, year) {
           report.period <- ReportPeriod(symbol, CIK, accession.no, accession.no.raw)
           report.period <- gsub("-", "" , report.period)
           
-          inst.url <- paste0("https://www.sec.gov/Archives/edgar/data/", CIK, "/", accession.no, "/", lower.symbol, "-", report.period, ".xml")
+          inst.url <- paste0("https://www.sec.gov/Archives/edgar/data/", CIK, "/", 
+                             accession.no, "/", lower.symbol, "-", report.period, ".xml")
           return(inst.url)
      }
      
@@ -50,7 +51,9 @@ GetFinancial <- function(statement.type, symbol, year) {
      instFile <- GetInstFile(inst.url)
      
      ##   Clear Cache Dir
-     file.remove("out_calculations.csv", "out_contexts.csv", "out_definitions.csv", "out_elements.csv", "out_facts.csv", "out_footnotes.csv", "out_labels.csv", "out_presentations.csv", "out_roles.csv", "out_units.csv")
+     file.remove("out_calculations.csv", "out_contexts.csv", "out_definitions.csv", 
+                 "out_elements.csv", "out_facts.csv", "out_footnotes.csv", 
+                 "out_labels.csv", "out_presentations.csv", "out_roles.csv", "out_units.csv")
      
      unlink("XBRLcache", recursive = TRUE)
      
@@ -70,20 +73,24 @@ GetFinancial <- function(statement.type, symbol, year) {
 
      ##   Merge with Label Linkbase
      statement <-
-          merge(statement.skeleton, instFile$label, by.x = "toElementId", by.y = "elementId") %>%
+          merge(statement.skeleton, instFile$label, by.x = "toElementId", 
+                by.y = "elementId") %>%
           filter(labelRole == "http://www.xbrl.org/2003/role/label")
 
      ##   Merge with Fact Linkbase
-     statement <- merge(statement, instFile$fact, by.x = "toElementId", by.y = "elementId")
+     statement <- merge(statement, instFile$fact, by.x = "toElementId", 
+                        by.y = "elementId")
 
      ##   Merge with Context Linkbase
-     statement <- merge(statement, instFile$context, by.x = "contextId", by.y = "contextId") %>%
+     statement <- merge(statement, instFile$context, by.x = "contextId", 
+                        by.y = "contextId") %>%
           arrange(rowid)
 
      ##   Clean combined table
      statement <- subset(statement, is.na(statement$dimension1))
 
-     clean.statement <- select(statement, labelString, unitId, fact, contextId, startDate, endDate, rowid)
+     clean.statement <- select(statement, labelString, unitId, fact, contextId, 
+                               startDate, endDate, rowid)
      clean.statement <- select(clean.statement, -contextId)
 
      colnames(clean.statement)[1] <- "Metric"

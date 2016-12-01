@@ -15,7 +15,12 @@
 
 GetIncome <- function(symbol, year) {
      
-     income.descriptions <- c("CONSOLIDATED STATEMENTS OF INCOME", "CONSOLIDATED STATEMENT OF INCOME", "CONSOLIDATED STATEMENTS OF OPERATIONS", "CONSOLIDATED STATEMENT OF OPERATIONS", "CONSOLIDATED STATEMENT OF EARNINGS", "CONSOLIDATED STATEMENTS OF EARNINGS")
+     income.descriptions <- c("CONSOLIDATED STATEMENTS OF INCOME", 
+                              "CONSOLIDATED STATEMENT OF INCOME", 
+                              "CONSOLIDATED STATEMENTS OF OPERATIONS", 
+                              "CONSOLIDATED STATEMENT OF OPERATIONS", 
+                              "CONSOLIDATED STATEMENT OF EARNINGS", 
+                              "CONSOLIDATED STATEMENTS OF EARNINGS")
      
      GetFinancial(income.descriptions, symbol, year)
 }

@@ -13,7 +13,8 @@ CompanyInfo <- function(symbol) {
      
      options(stringsAsFactors = FALSE)
      
-     url <- paste0("https://www.sec.gov/cgi-bin/browse-edgar?CIK=", symbol,"&owner=exclude&action=getcompany&Find=Search")
+     url <- paste0("https://www.sec.gov/cgi-bin/browse-edgar?CIK=", symbol,
+                   "&owner=exclude&action=getcompany&Find=Search")
      search.result <- xml2::read_html(url)
      
      ##   Generic function to extract info
@@ -85,6 +86,9 @@ CompanyInfo <- function(symbol) {
      if(state.inc == "SI"){state.inc <- NA}       ## Fix in case no incorporation year displayed
      
      ##   Create dataframe
-     info.df <- data.frame(company = company.name, CIK = CIK, SIC = SIC, state = state, state.inc = state.inc, FY.end = fiscal.year.end, street.address = street.address, city.state = city.state)
+     info.df <- data.frame(company = company.name, CIK = CIK, SIC = SIC, 
+                           state = state, state.inc = state.inc, 
+                           FY.end = fiscal.year.end, 
+                           street.address = street.address, city.state = city.state)
      return(info.df)
 }

@@ -15,7 +15,8 @@
 
 GetCashFlow <- function(symbol, year) {
      
-     cash.flow.descriptions <- c("CONSOLIDATED STATEMENT OF CASH FLOWS", "CONSOLIDATED STATEMENTS OF CASH FLOWS")
+     cash.flow.descriptions <- c("CONSOLIDATED STATEMENT OF CASH FLOWS", 
+                                 "CONSOLIDATED STATEMENTS OF CASH FLOWS")
      
      GetFinancial(cash.flow.descriptions, symbol, year)
      
