@@ -1,4 +1,4 @@
-[![Travis-CI Build Status](https://travis-ci.org/sewardlee337/finreportr.svg?branch=master)](https://travis-ci.org/sewardlee337/finreportr) [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/finreportr)](https://cran.r-project.org/package=finreportr) [![](http://cranlogs.r-pkg.org/badges/finreportr)](http://cran.rstudio.com/web/packages/finreportr/index.html)
+[![Travis-CI Build Status](https://travis-ci.org/sewardlee337/finreportr.svg?branch=master)](https://travis-ci.org/sewardlee337/finreportr) [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/finreportr)](https://cran.r-project.org/package=finreportr) [![](http://cranlogs.r-pkg.org/badges/finreportr)](http://cran.rstudio.com/web/packages/finreportr/index.html) [![status](http://joss.theoj.org/papers/128c974cac2dcf92b673c66f39a2c93e/status.svg)](http://joss.theoj.org/papers/128c974cac2dcf92b673c66f39a2c93e)
 
 # finreportr - Financial Data from U.S. Securities and Exchange Commission
 
