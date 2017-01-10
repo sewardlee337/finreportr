@@ -20,7 +20,8 @@ GetIncome <- function(symbol, year) {
                               "CONSOLIDATED STATEMENTS OF OPERATIONS", 
                               "CONSOLIDATED STATEMENT OF OPERATIONS", 
                               "CONSOLIDATED STATEMENT OF EARNINGS", 
-                              "CONSOLIDATED STATEMENTS OF EARNINGS")
+                              "CONSOLIDATED STATEMENTS OF EARNINGS",
+                              "INCOME STATEMENTS")
      
      GetFinancial(income.descriptions, symbol, year)
 }
