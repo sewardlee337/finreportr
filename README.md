@@ -33,8 +33,8 @@ devtools::install_github("sewardlee337/finreportr")
 
 `CompanyInfo()` returns the following information about a given company based on its stock ticker symbol:
 * Company Name
-* [Central Index Key ("CIK")] (https://en.wikipedia.org/wiki/Central_Index_Key)
-* [Standard  Industrial Classification ("SIC")] (https://en.wikipedia.org/wiki/Standard_Industrial_Classification)
+* [Central Index Key ("CIK")](https://en.wikipedia.org/wiki/Central_Index_Key)
+* [Standard  Industrial Classification ("SIC")](https://en.wikipedia.org/wiki/Standard_Industrial_Classification)
 * State Location
 * State of Incorporation
 * Fiscal Year End (ddmm)
@@ -70,7 +70,7 @@ where
 `AnnualReports()` returns a dataframe that summarizes a given company's annual reports based on its stock ticker symbol. Information returned include:
 * Filing Name
 * Filing Date
-* [Accession Number] (https://www.sec.gov/investor/pubs/edgarguide.htm#P158_19972)
+* [Accession Number](https://www.sec.gov/investor/pubs/edgarguide.htm#P158_19972)
 
 `AnnualReports()` will return data relating to a company's [Form 10-Ks](http://www.investopedia.com/terms/1/10-k.asp) if the company is domestic, and [Form 20-Fs](http://www.investopedia.com/terms/s/sec-form-20-f.asp) if the company is foreign. 
 
