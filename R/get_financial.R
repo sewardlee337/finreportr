@@ -40,16 +40,15 @@ GetFinancial <- function(statement.type, symbol, year) {
   
   inst.url <- GetURL(symbol, year)
   
-  ##   Check if url exits
-  
-  check <- tryCatch(is.list(httr::GET(inst.url)), error = function(e) {return(FALSE)})
-  if(check == FALSE) {
-    stop("no XBRL-format filings detected")
-  }
-  
   ## Checks for URLs that don't match current ticker NOTEZ
   if(nchar(as.character(httr::GET(inst.url))) < 2000) {
     stop("Ticker or Name Changed")
+  }
+  
+  ##   Check if url exits
+  check <- tryCatch(is.list(httr::GET(inst.url)), error = function(e) {return(FALSE)})
+  if(check == FALSE) {
+    stop("no XBRL-format filings detected")
   }
   
   ##   Download Instance Document
