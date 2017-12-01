@@ -32,6 +32,13 @@ GetFinancial <- function(statement.type, symbol, year) {
           return(inst.url)
      }
      
+     # print(nchar(as.character(httr::GET(inst.url))))
+     # print("gets to here")
+     # ## Checks for URLs that don't match current ticker NOTEZ
+     # if(nchar(as.character(httr::GET(inst.url))) < 2000) {
+     #   stop("Ticker or Name Changed")
+     # }
+     # print("and here")
      
      ##   Function to download Instance Document
      GetInstFile <- function(url) {
@@ -41,7 +48,6 @@ GetFinancial <- function(statement.type, symbol, year) {
      inst.url <- GetURL(symbol, year)
      
      ##   Check if url exits
-     
      check <- tryCatch(is.list(httr::GET(inst.url)), error = function(e) {return(FALSE)})
      if(check == FALSE) {
           stop("no XBRL-format filings detected")
