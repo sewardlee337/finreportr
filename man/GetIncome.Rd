@@ -21,4 +21,3 @@ Note that all data returned by this function comes from the company's 10-K, not 
 GetIncome("FB", 2016)
 }
 }
-

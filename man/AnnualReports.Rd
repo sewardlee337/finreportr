@@ -16,6 +16,5 @@ Extracts and displays listing of annual reports filed by a company in a data fra
 }
 \examples{
 AnnualReports("TSLA")
-AnnualReports("HTHIY", foreign = TRUE)
+AnnualReports("BABA", foreign = TRUE)
 }
-

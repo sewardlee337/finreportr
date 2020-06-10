@@ -4,11 +4,13 @@
 \name{statecodes}
 \alias{statecodes}
 \title{EDGAR State and Country Codes}
-\format{A data frame with 310 rows and 2 variables:
+\format{
+A data frame with 310 rows and 2 variables:
  \itemize{
   \item state: State or Country Code
   \item state.name: State or Country Name
-}}
+}
+}
 \source{
 \url{https://www.sec.gov/edgar/searchedgar/edgarstatecodes.htm}
 }
@@ -19,4 +21,3 @@ statecodes
 A dataset containing state and country codes used in the SEC EDGAR database.
 }
 \keyword{datasets}
-

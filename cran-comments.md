@@ -1,3 +1,12 @@
+# VERSION 1.0.2
+
+## Test environments
+* local Ubuntu LTS install, R 3.4.4
+
+## R CMD check results
+There were no ERRORs or WARNINGs
+
+
 # VERSION 1.0.1
 
 ## Test environments

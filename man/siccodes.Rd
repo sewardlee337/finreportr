@@ -4,11 +4,13 @@
 \name{siccodes}
 \alias{siccodes}
 \title{Standard Industrial Classification Code List}
-\format{A data frame with 444 rows and 2 variables:
+\format{
+A data frame with 444 rows and 2 variables:
 \itemize{
   \item SIC: Standard Industrial Classification Code
   \item industry: Industry Title
-}}
+}
+}
 \source{
 \url{https://www.sec.gov/info/edgar/siccodes.htm}
 }
@@ -19,4 +21,3 @@ siccodes
 A dataset containing SIC codes and industries that they represent
 }
 \keyword{datasets}
-

@@ -21,4 +21,3 @@ Note that all data returned by this function comes from the company's Form 10-K,
 GetCashFlow("FB", 2016)
 }
 }
-

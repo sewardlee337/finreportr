@@ -16,4 +16,3 @@ Extracts and displays basic information relating to a given company in a data fr
 CompanyInfo("GOOG")
 CompanyInfo("TSLA")
 }
-
