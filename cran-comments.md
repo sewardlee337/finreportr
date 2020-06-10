@@ -1,7 +1,8 @@
 # VERSION 1.0.2
 
 ## Test environments
-* local Ubuntu LTS install, R 3.4.4
+* local ubuntu 18.04.4 LTS install, R 3.4.4
+* ubuntu 16.04.6 LTS (on travis-ci), R 4.0.0
 
 ## R CMD check results
 There were no ERRORs or WARNINGs

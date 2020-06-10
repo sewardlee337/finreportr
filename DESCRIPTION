@@ -18,6 +18,7 @@ Imports: xml2,
     XBRL,
     curl
 License: MIT + file LICENSE
+LazyData: true
 URL: https://github.com/sewardlee337/finreportr
 BugReports: https://github.com/sewardlee337/finreportr/issues
 RoxygenNote: 7.1.0
