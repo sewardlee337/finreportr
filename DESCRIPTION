@@ -2,7 +2,7 @@ Package: finreportr
 Type: Package
 Title: Financial Data from U.S. Securities and Exchange Commission
 Version: 1.0.2
-Date: 2020-06-09
+Date: 2020-06-12
 Author: Seward Lee
 Maintainer: Seward Lee <sewardlee337@gmail.com>
 Description: Download and display company financial data from the U.S. Securities
