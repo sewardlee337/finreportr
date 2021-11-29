@@ -6,8 +6,10 @@
 #' @import dplyr
 #' @param symbol A character vector specifying the stock symbol of the company of interest.
 #' @examples
+#' \dontrun{
 #' CompanyInfo("GOOG")
 #' CompanyInfo("TSLA")
+#' }
 
 CompanyInfo <- function(symbol) {
      

@@ -15,6 +15,8 @@ AnnualReports(symbol, foreign = FALSE)
 Extracts and displays listing of annual reports filed by a company in a data frame.
 }
 \examples{
+\dontrun{
 AnnualReports("TSLA")
 AnnualReports("BABA", foreign = TRUE)
+}
 }

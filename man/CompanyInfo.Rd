@@ -13,6 +13,8 @@ CompanyInfo(symbol)
 Extracts and displays basic information relating to a given company in a data frame.
 }
 \examples{
+\dontrun{
 CompanyInfo("GOOG")
 CompanyInfo("TSLA")
+}
 }

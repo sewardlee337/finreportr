@@ -7,8 +7,10 @@
 #' @param symbol A character vector specifying the stock symbol of the company of interest.
 #' @param foreign A logical vector indicating whether the company is domestic or foreign. \code{foreign = FALSE} by default.
 #' @examples
+#' \dontrun{
 #' AnnualReports("TSLA")
 #' AnnualReports("BABA", foreign = TRUE)
+#' }
 
 AnnualReports <- function(symbol, foreign = FALSE) {
      
