@@ -1,5 +1,5 @@
 [![Travis-CI Build Status](https://travis-ci.org/sewardlee337/finreportr.svg?branch=master)](https://travis-ci.org/sewardlee337/finreportr) [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/finreportr)](https://cran.r-project.org/package=finreportr) ![](http://cranlogs.r-pkg.org/badges/grand-total/finreportr) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.192466.svg)](https://doi.org/10.5281/zenodo.192466)
-[![status](http://joss.theoj.org/papers/128c974cac2dcf92b673c66f39a2c93e/status.svg)](http://joss.theoj.org/papers/128c974cac2dcf92b673c66f39a2c93e) [![Rdoc](http://www.rdocumentation.org/badges/version/finreportr)](http://www.rdocumentation.org/packages/finreportr) 
+[![status](http://joss.theoj.org/papers/128c974cac2dcf92b673c66f39a2c93e/status.svg)](https://joss.theoj.org/papers/10.21105/joss.00119) 
 
 # finreportr - Financial Data from U.S. Securities and Exchange Commission
 
@@ -70,9 +70,9 @@ where
 `AnnualReports()` returns a dataframe that summarizes a given company's annual reports based on its stock ticker symbol. Information returned include:
 * Filing Name
 * Filing Date
-* [Accession Number](https://www.sec.gov/investor/pubs/edgarguide.htm#P158_19972)
+* Accession Number
 
-`AnnualReports()` will return data relating to a company's [Form 10-Ks](http://www.investopedia.com/terms/1/10-k.asp) if the company is domestic, and [Form 20-Fs](http://www.investopedia.com/terms/s/sec-form-20-f.asp) if the company is foreign. 
+`AnnualReports()` will return data relating to a company's [Form 10-Ks](https://www.investopedia.com/terms/1/10-k.asp) if the company is domestic, and [Form 20-Fs](https://www.investopedia.com/terms/s/sec-form-20-f.asp) if the company is foreign. 
 
 #### Arguments:
 

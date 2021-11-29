@@ -1,4 +1,4 @@
-# VERSION 1.0.2
+# VERSION 1.0.3
 
 ## Test environments
 * local ubuntu 18.04.4 LTS install, R 3.4.4
