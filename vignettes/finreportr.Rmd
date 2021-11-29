@@ -42,7 +42,7 @@ For example, suppose we want to do a quick search on Google/Alphabet (symbol: `G
 1 GOOGLE INC. 0001288776 7370    CA        DE   1231 1600 AMPHITHEATRE PARKWAY MOUNTAIN VIEW CA 94043
 ```
 
-The function `AnnualReports()` returns a data frame that summarizes a company's annual reports based on its stock ticker symbol. It will return data relating to a company's [Form 10-Ks](http://www.investopedia.com/terms/1/10-k.asp) if the company is domestic, and [Form 20-Fs](http://www.investopedia.com/terms/s/sec-form-20-f.asp) if the company is foreign. 
+The function `AnnualReports()` returns a data frame that summarizes a company's annual reports based on its stock ticker symbol. It will return data relating to a company's [Form 10-Ks](https://www.investopedia.com/terms/1/10-k.asp) if the company is domestic, and [Form 20-Fs](https://www.investopedia.com/terms/s/sec-form-20-f.asp) if the company is foreign. 
 
 For example, suppose we want to display the annual reports filed by Facebook (symbol: `FB`):
 
