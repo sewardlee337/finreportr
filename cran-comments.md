@@ -1,6 +1,7 @@
 # VERSION 1.0.3
 
 ## Test environments
+* local OS X install, R 4.1.2
 * local ubuntu 18.04.4 LTS install, R 3.4.4
 * win-builder (devel and release)
 
