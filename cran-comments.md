@@ -2,6 +2,7 @@
 
 ## Test environments
 * local ubuntu 18.04.4 LTS install, R 3.4.4
+* win-builder (devel and release)
 
 ## R CMD check results
 There were no ERRORs or WARNINGs
