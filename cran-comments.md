@@ -1,3 +1,13 @@
+# VERSION 1.0.4
+
+## Test environments
+* local OS X install, R 4.1.2
+* R-hub windows-x86_64-release (r-release)
+* R-hub windows-x86_64-oldrel (r-oldrel)
+* R-hub fedora-resugcc-devel (r-devel)
+
+---
+
 # VERSION 1.0.3
 
 ## Test environments
