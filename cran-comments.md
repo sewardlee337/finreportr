@@ -5,6 +5,7 @@
 * R-hub windows-x86_64-release (r-release)
 * R-hub windows-x86_64-oldrel (r-oldrel)
 * R-hub fedora-resugcc-devel (r-devel)
+* winbuilder (devel and release)
 
 ---
 
